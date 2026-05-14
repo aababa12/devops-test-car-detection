@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: car-detector
+
+spec:
+  replicas: {{ .Values.replicaCount }}
+
+  selector:
+    matchLabels:
+      app: car-detector
+
+  template:
+    metadata:
+      labels:
+        app: car-detector
+
+    spec:
+      containers:
+        - name: car-detector
+
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+
+          imagePullPolicy: IfNotPresent
+
+          ports:
+            - containerPort: {{ .Values.containerPort }}

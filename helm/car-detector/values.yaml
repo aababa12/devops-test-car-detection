@@ -1,0 +1,7 @@
+image:
+  repository: car-detector
+  tag: latest
+
+replicaCount: 1
+
+containerPort: 8000

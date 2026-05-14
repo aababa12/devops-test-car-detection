@@ -1,0 +1,6 @@
+apiVersion: v2
+name: car-detector
+description: YOLOv8 car detection service
+type: application
+version: 0.1.0
+appVersion: "1.0"
