@@ -1,0 +1,8 @@
+services:
+  car-detector:
+    build: .
+    container_name: car-detector
+    volumes:
+      - ./data:/app/data
+    env_file:
+      - .env

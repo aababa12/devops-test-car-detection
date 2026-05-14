@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+detector/venv/
+downloads/
+yolov8*.pt
+venv/
+__pycache__/
+*.pyc
+.env
+*.mp4
+*.pt
